@@ -16,10 +16,12 @@ nav {
     }
 
     ul {
-        gap: 54px;
+        gap: 53px;
 
         i {
             font-size: 20px;
+            margin-left: calc(106px - 53px);
+            padding-right: 2vw;
         }
     }
 
