@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat&display=swap');
+
+@import './styles/fonts';
+@import './styles/sizeAndDisplay';
+@import './styles/nav';
+@import './styles/header';
+@import './styles/about';
+@import './styles/portfolio';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}

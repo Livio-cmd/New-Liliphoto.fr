@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Montserrat&display=swap");
+h1 {
+  font-family: "Gilda Display", serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Gilda Display", serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: "Gilda Display", serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #444444;
+  line-height: 1.8em;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #727272;
+  line-height: 1.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #000;
+  border-radius: 2px;
+  padding: 20px 32px;
+  transition: all 300ms ease-in-out;
+  width: -moz-fit-content;
+  width: fit-content;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  border-radius: 100px;
+}
+.button:hover {
+  background-color: transparent;
+  outline: 2px solid #000;
+  color: black;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0 4vw;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+section {
+  padding: 20vh 0;
+}
+section .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .section-title {
+  padding-bottom: 2vw;
+}
+
+section.grey {
+  background-color: #eeeff0;
+}
+
+.limited-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.tag {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  border-radius: 4px;
+}
+
+nav {
+  width: 100%;
+  height: 4vw;
+}
+nav .wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+nav #logo {
+  font-size: 21px;
+  color: #000;
+  text-transform: none;
+  font-family: "Gilda Display";
+}
+nav ul {
+  gap: 54px;
+}
+nav ul i {
+  font-size: 20px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+header .wrapper {
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  position: relative;
+}
+header .wrapper .overlay {
+  position: absolute;
+  inset: 0;
+  padding: inherit;
+  background-color: white;
+}
+header .wrapper .background-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: inherit;
+  z-index: -1;
+}
+@media screen and (max-width: 1768px) {
+  header .wrapper {
+    background-origin: unset;
+  }
+}
+header .container {
+  margin-left: 4vw;
+  margin-top: 4vw;
+  padding: 2vw;
+  z-index: 10;
+}
+header .container h1 {
+  font-family: Helvetica;
+  color: white;
+  font-size: 14vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-image: url("../images/17.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header p {
+  font-size: 2vw;
+  color: black;
+  margin: 1vw 0;
+  font-weight: 600;
+}
+header .button {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+}
+header .button i {
+  font-weight: bolder;
+  font-size: 1.7em;
+}
+header .button:hover {
+  color: black;
+  background-color: transparent;
+  outline: 2px solid black;
+}
+
+#about .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+}
+#about .container {
+  gap: 64px;
+  height: -moz-fit-content;
+  height: fit-content;
+  align-items: center;
+}
+#about .side {
+  max-width: 50%;
+}
+#about .left {
+  padding: 0 20px;
+}
+#about .left img {
+  width: 100%;
+  height: auto;
+}
+
+#portfolio .container {
+  align-items: center;
+}
+#portfolio .images {
+  width: 100%;
+  gap: 10px;
+}
+#portfolio .column {
+  width: 33.333333%;
+  gap: 10px;
+}
+#portfolio .column .image-container {
+  width: 100%;
+  max-height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+#portfolio .column .image-container img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 1s ease-out;
+}
+#portfolio .column .image-container .overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  display: none;
+  pointer-events: none;
+}
+#portfolio .column .image-container:hover img {
+  transform: scale(1.05);
+}
+#portfolio .column .image-container:hover .overlay {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}/*# sourceMappingURL=styles.css.map */

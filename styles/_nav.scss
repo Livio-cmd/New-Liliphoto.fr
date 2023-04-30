@@ -1,0 +1,26 @@
+nav {
+    width: 100%;
+    height: 4vw;
+
+
+    .wrapper {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logo {
+        font-size: 21px;
+        color: #000;
+        text-transform: none;
+        font-family: 'Gilda Display';
+    }
+
+    ul {
+        gap: 54px;
+
+        i {
+            font-size: 20px;
+        }
+    }
+
+}

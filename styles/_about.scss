@@ -1,0 +1,30 @@
+#about {
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 48px;
+    }
+
+    .container {
+        gap: 64px;
+        height: fit-content;
+        align-items: center;
+    }
+
+
+    .side {
+        max-width: 50%;
+    }
+
+
+    .left {
+        padding: 0 20px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}

@@ -1,0 +1,56 @@
+@mixin font($fam, $fam2, $size, $weight, $color, $lineHeight) {
+    font-family: $fam, $fam2;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $lineHeight;
+}
+
+h1 {
+    @include font('Gilda Display', serif, 64px, 400, #000, 1);
+}
+
+h2 {
+    @include font('Gilda Display', serif, 45px, 400, #000, 1.2);
+}
+
+h3 {
+    @include font('Gilda Display', serif, 25px, 400, #000, 1);
+}
+
+p {
+    @include font('Montserrat', sans-serif, 15px, 400, #444444, 1.8em);
+}
+
+a {
+    @include font('Montserrat', sans-serif, 13px, 400, #727272, 1.8em);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.button {
+    @include font('Montserrat', sans-serif, 13px, 400, #fff, 1);
+
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: #000;
+
+    border-radius: 2px;
+
+    padding: 20px 32px;
+
+    transition: all 300ms ease-in-out;
+
+    width: fit-content;
+
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    border-radius: 100px;
+
+    &:hover {
+        background-color: transparent;
+        outline: 2px solid #000;
+        color: black;
+    }
+}
